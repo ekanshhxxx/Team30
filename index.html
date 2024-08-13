@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIZ Visuals</title>
+    <style>
+        .navbar, .navContent {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar2 div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: blue;
+            padding: 15px;
+            border-radius:5px;
+        }
+        .navbar2 div a{
+            text-decoration:none ;
+            color: aliceblue;
+            
+        }
+
+        .navbar input {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        .navbar button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .logo{
+            width: 100px;
+            border-radius:10% ;
+            margin-right: 2rem;
+        }
+
+        .ScrollContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .scrollCards-Xaxis {
+            display: flex;
+            overflow-x: scroll;
+            padding: 20px;
+        }
+
+        .scrollCards-Xaxis > div {
+            margin-right: 20px;
+            width: 250px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .Banner2 h1{
+            justify-content:center;
+            padding-left: 40%;
+            padding-top: 10px;
+            margin-right: 40%;
+
+        }
+        .Banner2{
+            background-color: rgb(88, 178, 230);
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+        .banner{
+            width: 200%;
+            height: 50%;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navContent {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navContent">
+            <img class="logo" src="https://t4.ftcdn.net/jpg/01/75/87/31/360_F_175873125_7eaLr79br7hpJF0XhxMZbDa75AUqNMXK.jpg" alt="DRIZ Visuals Logo">
+            <h1>DRIZ Visuals</h1>
+        </div>
+        <div class="navContent">
+            <div class="dropdown" style="margin-right: 10px;">About Driz</div>
+            <h1 style="margin-right: 10px;">Chapters</h1>
+            <h1 style="margin-right: 10px;">Upcoming Events</h1>
+            <button style="margin-right: 10px;background-color: red;">Login</button>
+        </div>
+        <div>
+            <input type="text" placeholder="Search...">
+        </div>
+    </nav>
+    <hr>
+</header>
+<body>
+    <div class="">
+        <img src="https://img.freepik.com/premium-photo/college-university-students-communication-chat-study-work-laptop-prepare-exams-girls-boys-communicating-studying-flat-modern-illustration_76964-158464.jpg?w=740" alt="Banner Image" class="banner">
+    </div>
+    <br><br>
+    <div class="Banner2">
+        <h1>Chitkara University - Chandigarh, India</h1>
+        <div>
+            <svg>LinkedIn</svg>
+            <svg>Instagram</svg>
+            <svg>Email</svg>
+        </div>
+    </div>
+    <div>
+        <nav class="navbar2">
+            <div>
+                <a href="#">About</a>
+                <a href="#">Upcoming Events</a>
+                <a href="#">Past Events</a>
+                <a href="#">Organizers</a>
+                <a href="#">Photos</a>
+                <a href="#">Videos</a>
+            </div>
+          
+        </nav>
+    </div>
+    <div>
+        <div>
+            <h1>About</h1>
+            <p>Details about DRIZ Visuals.</p>
+        </div>
+    </div>
+    <br><br>
+    <div class="ScrollContainer">
+        <div>
+            <h1>Past Events</h1>
+        </div>
+        <div class="scrollCards-Xaxis">
+            <div>
+                <img src="" alt="Past Event Image">
+                <div>
+                    <h2>Event Title</h2>
+                </div>
+            </div>
+        </div>
+        <button>Learn More</button>
+    </div>
+    <br><br>
+    <div>
+        <iframe src="https://www.youtube.com/watch?v=hOHKltAiKXQ" frameborder="0"></iframe>
+    </div>
+</body>
+</html>
